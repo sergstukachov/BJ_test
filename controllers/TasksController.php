@@ -31,20 +31,19 @@ class TasksController extends HomeController
      * @param null $message
      * @return string
      */
-    public function mainPage($message= null)
+    public function mainPage()
     {
-                if (isset($_GET["pa"]))
+                if (isset($_GET["page"]))
         {
-            $page = $_GET["pa"];
+            $page = $_GET["page"];
         } else
         {
             $page = 1;
         }
 
-        var_dump($_GET);
         $tasksModel = $this->loadModel("Tasks", "task");
-        $tasks = $tasksModel->getFullList($page);
-        return $this->generate("index", ['tasks' => $tasks, 'message'=> $message]);
+        $tasks = $tasksModel->getPagination($page);
+        return $this->generate("index", ['tasks' => $tasks]);
     }
 
     /**

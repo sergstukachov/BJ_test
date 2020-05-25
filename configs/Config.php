@@ -16,7 +16,7 @@ class Config
         return [
             [
 
-                "uri" => "/test",
+                "uri" => "/",
                 "controller" => "\controllers\TasksController",
                 "action" => "mainPage",
                 "method" => "GET",

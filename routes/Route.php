@@ -36,13 +36,15 @@ class Route
     
     public function routing()
     {
+
         $routes = Config::getRoutes();
         for ($i = 0, $count = count($routes); $i < $count; $i++) {
             if ($_SERVER["REQUEST_METHOD"] === $routes[$i]["method"]
-                && rspae_url($_SERVER["REQUEST_URI"])['path'] === $routes[$i]["uri"]) {
+                && parse_url($_SERVER["REQUEST_URI"])['path'] === $routes[$i]["uri"]) {
                 $controllerName = new $routes[$i]["controller"];
                 $action = $routes[$i]["action"];
                 $response = $controllerName->$action();
+
                 if ($response) {
                     echo $response;
                 } else {
