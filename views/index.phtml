@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+</head>
+<body>
+
+<div>
+<div class="container">
+    
+    <h1>Tasks</h1>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Task</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        <?php
+        if (!empty($tasks)) {
+            foreach ($tasks as $task) {
+                ?>
+                <tr class="table-row">
+                    <td><?= $task["name"]; ?></td>
+                    <td><?= $task["email"]; ?></td>
+                    <td><?= $task["task"]; ?></td>
+                    <td><?= $task["status"]; ?> </td>
+                </tr>
+                <?php
+            }
+        }
+        ?>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div>
+    <h3>add Task</h3>
+    <form action="/save/tasks/" method="post" name="taskform" id="task_form">
+        <p><input type="text" name="name" id="name" value="" size="25"/>
+            <small>Name</small>
+        </p>
+        <p><input type="text" name="email" id="email" value="" size="25"/>
+            <small>Mail</small>
+        </p>
+        <p>
+            <small>Task</small>
+        </p>
+        <p><textarea name="task" id="task" cols="48" rows="8"> </textarea>
+        </p>
+        <p><input name="submit" type="submit" id="submit" value="save"/>
+        </p>
+    </form>
+</div>
+</div>
+<a href="?pa=1">1</a>
+<a href="/test?pa=2">2</a>
+<a href="?pa=3">3</a>
+<a href="?pa=4">4</a>
+</div>
+</body>
+</html>
+
+
