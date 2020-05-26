@@ -56,9 +56,9 @@ class Tasks extends Model
     public function getPagination($page)
     {
 
-
+//        return $this->sql("SELECT * FROM tasks JOIN tasks_status ON tasks.status_id = tasks_status.id");
         $shift = $this->count * ($page - 1);
-        $result_set = $this->sql("SELECT * FROM `tasks` LIMIT $shift, $this->count");
+        $result_set = $this->sql("SELECT * FROM `tasks` JOIN tasks_status ON tasks.status_id = tasks_status.id LIMIT $shift, $this->count");
 
         return $result_set;
     }

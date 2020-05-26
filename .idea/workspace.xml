@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60359368-96f3-4023-b2ba-d72c2b57ac20" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/TasksController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Tasks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.phtml" afterDir="false" />
     </list>
@@ -95,7 +94,7 @@
       <workItem from="1590393167086" duration="488000" />
       <workItem from="1590393667177" duration="299000" />
       <workItem from="1590395483550" duration="18420000" />
-      <workItem from="1590421579579" duration="3865000" />
+      <workItem from="1590421579579" duration="5186000" />
     </task>
     <servers />
   </component>
@@ -175,10 +174,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1590351896689" />
-    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590479929311">
+    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590484782349">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590479929311" />
+    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590484782349" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
