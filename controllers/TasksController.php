@@ -40,10 +40,10 @@ class TasksController extends HomeController
         {
             $page = 1;
         }
-
         $tasksModel = $this->loadModel("Tasks", "task");
+        $countItems= $tasksModel->getCountItems();
         $tasks = $tasksModel->getPagination($page);
-        return $this->generate("index", ['tasks' => $tasks]);
+        return $this->generate("index", ['tasks' => $tasks, 'countItems' => $countItems]);
     }
 
     /**

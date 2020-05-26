@@ -12,6 +12,8 @@ use \database\Connect;
 
 class Tasks extends Model
 {
+    protected $count = 3;// Number of records per page
+
     /**
      * Tasks constructor.
      */
@@ -19,6 +21,7 @@ class Tasks extends Model
     {
         parent::__construct();
     }
+
     /**
      * @return mixed
      */
@@ -46,14 +49,31 @@ class Tasks extends Model
         return $this->sql("INSERT INTO tasks ( name,email,task ) VALUES (' " . $name . "  ',' " . $email . " ',' " . $task . "')");
     }
 
+    /**
+     * @param $page
+     * @return array
+     */
     public function getPagination($page)
     {
-       $count = 3;// Количество записей на странице
 
-        $shift = $count * ($page - 1);// Смещение в LIMIT. Те записи, порядковый номер которого больше этого числа, будут выводиться.
-        $result_set = $this->sql("SELECT * FROM `tasks` LIMIT $shift, $count");// Делаем выборку $count записей, начиная с $shift + 1.
 
-return $result_set;
+        $shift = $this->count * ($page - 1);
+        $result_set = $this->sql("SELECT * FROM `tasks` LIMIT $shift, $this->count");
+
+        return $result_set;
+    }
+
+    /**
+     * @return array
+     */
+    public function getCountItems()
+    {
+        $itemsTemp = $this->sql('SELECT * FROM tasks');
+        $items =  mysqli_num_rows(  $itemsTemp);
+        $countItems = ceil($items / $this->count);
+
+        return $countItems;
+
     }
 
 }

@@ -9,63 +9,66 @@
 <body>
 
 <div>
-<div class="container">
-    
-    <h1>Tasks</h1>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Task</th>
-            <th>Status</th>
-        </tr>
-        </thead>
-        <tbody id="table-body">
-        <?php
-        if (!empty($tasks)) {
-            foreach ($tasks as $task) {
-                ?>
-                <tr class="table-row">
-                    <td><?= $task["name"]; ?></td>
-                    <td><?= $task["email"]; ?></td>
-                    <td><?= $task["task"]; ?></td>
-                    <td><?= $task["status"]; ?> </td>
-                </tr>
-                <?php
-            }
-        }
-        ?>
-        </tbody>
-    </table>
-</div>
+    <div class="container">
 
-<div class="container">
-    <div>
-    <h3>add Task</h3>
-    <form action="/save/tasks/" method="post" name="taskform" id="task_form">
-        <p><input type="text" name="name" id="name" value="" size="25"/>
-            <small>Name</small>
-        </p>
-        <p><input type="text" name="email" id="email" value="" size="25"/>
-            <small>Mail</small>
-        </p>
-        <p>
-            <small>Task</small>
-        </p>
-        <p><textarea name="task" id="task" cols="48" rows="8"> </textarea>
-        </p>
-        <p><input name="submit" type="submit" id="submit" value="save"/>
-        </p>
-    </form>
-</div>
-</div>
-<a href="?page=1">1</a>
-<a href="?page=2">2</a>
-<a href="?page=3">3</a>
-<a href="?page=4">4</a>
+        <h1>Tasks</h1>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Task</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+            <?php
+            if (!empty($tasks)) {
+                foreach ($tasks as $task) {
+                    ?>
+                    <tr class="table-row">
+                        <td><?= $task["name"]; ?></td>
+                        <td><?= $task["email"]; ?></td>
+                        <td><?= $task["task"]; ?></td>
+                        <td><?= $task["status"]; ?> </td>
+                    </tr>
+                    <?php
+                }
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <div>
+            <h3>add Task</h3>
+            <form action="/save/tasks/" method="post" name="taskform" id="task_form">
+                <p><input type="text" name="name" id="name" value="" size="25"/>
+                    <small>Name</small>
+                </p>
+                <p><input type="text" name="email" id="email" value="" size="25"/>
+                    <small>Mail</small>
+                </p>
+                <p>
+                    <small>Task</small>
+                </p>
+                <p><textarea name="task" id="task" cols="48" rows="8"> </textarea>
+                </p>
+                <p><input name="submit" type="submit" id="submit" value="save"/>
+                </p>
+            </form>
+        </div>
+    </div>
+    <?php
+    if (!empty($countItems)) {
+        for ($i = 1; $i <= $countItems; $i++) { ?>
+        <a href="?page=<?= $i ;?>"><?= $i ;?></a>
+    <?php
+        }
+    }
+    ?>
+
 </div>
 </body>
 </html>
-
-
