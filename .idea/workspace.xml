@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="60359368-96f3-4023-b2ba-d72c2b57ac20" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/views/addtask.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/save.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/configs/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/TasksController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Tasks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.phtml" afterDir="false" />
     </list>
@@ -94,12 +116,24 @@
       <workItem from="1590393167086" duration="488000" />
       <workItem from="1590393667177" duration="299000" />
       <workItem from="1590395483550" duration="18420000" />
-      <workItem from="1590421579579" duration="5186000" />
+      <workItem from="1590421579579" duration="6200000" />
+      <workItem from="1590581024260" duration="6892000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -118,6 +152,14 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="626" y="220" key="#Inspections/65.24.1855.1056@65.24.1855.1056" timestamp="1590419783198" />
+    <state x="592" y="201" key="#Intentions" timestamp="1590586843752">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="592" y="201" key="#Intentions/65.24.1855.1056@65.24.1855.1056" timestamp="1590586843752" />
+    <state x="674" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590585085361">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="674" y="341" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1590585085361" />
     <state x="714" y="363" width="554" height="401" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1590351940181">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -170,14 +212,18 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1809" height="468" key="GridCell.Tab.2.right/65.24.1855.1056@65.24.1855.1056" timestamp="1590422520236" />
+    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1590581467780">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590581467780" />
     <state x="486" y="174" key="SettingsEditor" timestamp="1590351896689">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1590351896689" />
-    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590484782349">
+    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590588637396">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590484782349" />
+    <state x="165" y="96" width="1655" height="884" key="com.intellij.history.integration.ui.views.FileHistoryDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1590588637396" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -209,7 +255,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/models/Tasks.php</url>
-          <line>59</line>
+          <line>57</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -219,7 +265,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/models/Tasks.php</url>
-          <line>74</line>
+          <line>72</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -229,7 +275,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/models/Tasks.php</url>
-          <line>71</line>
+          <line>69</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>

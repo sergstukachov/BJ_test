@@ -26,6 +26,12 @@ class Config
                 "action" => "list",
                 "method" => "GET",
             ],[
+
+                "uri" => "/addtask/tasks/",
+                "controller" => "\controllers\TasksController",
+                "action" => "addtask",
+                "method" => "GET",
+            ],[
                 "uri" => "/save/tasks/",
                 "controller" => "\controllers\TasksController",
                 "action" => "save",

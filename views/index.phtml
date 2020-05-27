@@ -41,24 +41,12 @@
     </div>
 
     <div class="container">
-        <div>
-            <h3>add Task</h3>
-            <form action="/save/tasks/" method="post" name="taskform" id="task_form">
-                <p><input type="text" name="name" id="name" value="" size="25"/>
-                    <small>Name</small>
-                </p>
-                <p><input type="text" name="email" id="email" value="" size="25"/>
-                    <small>Mail</small>
-                </p>
-                <p>
-                    <small>Task</small>
-                </p>
-                <p><textarea name="task" id="task" cols="48" rows="8"> </textarea>
-                </p>
-                <p><input name="submit" type="submit" id="submit" value="save"/>
-                </p>
-            </form>
-        </div>
+        <p>
+        <form action="/addtask/tasks/">
+            <button type="submit">add Task</button>
+        </p>
+
+
         <?php
         if (!empty($countItems)) {
             for ($i = 1; $i <= $countItems; $i++) { ?>

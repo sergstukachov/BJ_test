@@ -56,14 +56,21 @@ class TasksController extends HomeController
             $name = isset($_POST['name']) ? trim($_POST['name']) : '';
             $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
             $task = trim($_POST['task']);
-            
+
             $tasksModel->save($name, $email, $task);
-            return true;
-//            return $this->mainPage();
+            return $this->generate("save");
         } catch (\Exception $e) {
             var_dump($e->getMessage());
         }
-        
+    }
+        /**
+         *
+         */
+        public function addtask()
+    {
+        return $this->generate("addtask");
 
     }
+
+
 }
